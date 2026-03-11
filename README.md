@@ -32,4 +32,7 @@ O(log n)
 
 ## Example
 
-Input:
+Input  
+8 3 1 7 0 10 2
+Sorted Output
+0 1 2 3 7 8 10

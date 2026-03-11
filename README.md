@@ -1,6 +1,6 @@
 # Quick Sort Algorithm
 
-This repository contains the implementation and explanation of the **Quick Sort Algorithm** using Java.
+This repository contains the implementation and explanation of the **Quick Sort Algorithm** using C programming language.
 
 ## About Quick Sort
 

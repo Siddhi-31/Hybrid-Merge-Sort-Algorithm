@@ -1,38 +1,36 @@
-# Quick Sort Algorithm
+**Hybrid Merge Sort Implementation in C**
 
-This repository contains the implementation and explanation of the **Quick Sort Algorithm** using C programming language.
+This repository contains the implementation and explanation of the Hybrid Merge Sort Algorithm using the C programming language.
 
-## About Quick Sort
+About Hybrid Merge Sort
 
-Quick Sort is a **divide-and-conquer sorting algorithm**. It works by selecting a pivot element and partitioning the array so that:
+Hybrid Merge Sort is an optimized version of Merge Sort.
+It combines Merge Sort with Insertion Sort to improve performance on small subarrays.
 
-- Elements smaller than the pivot are placed on the left
-- Elements greater than the pivot are placed on the right
+Merge Sort is efficient for large datasets, while Insertion Sort performs better for small arrays due to lower overhead. Hybrid Merge Sort switches to Insertion Sort when the subarray size becomes small.
 
-The same process is then applied recursively to the subarrays.
+Algorithm Steps
 
-## Algorithm Steps
+Divide the array into two halves.
 
-1. Choose a pivot element
-2. Partition the array around the pivot
-3. Recursively apply Quick Sort to the left subarray
-4. Recursively apply Quick Sort to the right subarray
+Recursively apply Hybrid Merge Sort to each half.
 
-## Time Complexity
+If the subarray size becomes smaller than a threshold (e.g., 10 elements), use Insertion Sort.
 
-| Case | Complexity |
-|-----|-------------|
-| Best Case | O(n log n) |
-| Average Case | O(n log n) |
-| Worst Case | O(n²) |
+Merge the sorted subarrays.
 
-## Space Complexity
+Time Complexity
+Case	Complexity
+Best Case	O(n log n)
+Average Case	O(n log n)
+Worst Case	O(n log n)
+Space Complexity
 
-O(log n)
+O(n)
 
-## Example
+Example
 
-Input  
+Input
 
 8 3 1 7 0 10 2
 
